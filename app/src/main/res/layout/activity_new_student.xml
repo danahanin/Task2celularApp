@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewStudentActivity">
+
+    <include
+        android:id="@+id/headerLayoutNewStudent"
+        layout="@layout/header_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/studentDetailsImageNew"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayoutNewStudent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/nameFieldNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="name:"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentDetailsImageNew" />
+
+    <TextView
+        android:id="@+id/idFieldNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="id:"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameFieldNew" />
+
+    <TextView
+        android:id="@+id/phoneFieldNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="phone:"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idFieldNew" />
+
+    <TextView
+        android:id="@+id/addressFieldNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:text="address:"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneFieldNew" />
+
+    <EditText
+        android:id="@+id/nameValueNew"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/nameFieldNew"
+        app:layout_constraintTop_toBottomOf="@+id/studentDetailsImageNew" />
+
+    <EditText
+        android:id="@+id/idValueNew"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/idFieldNew"
+        app:layout_constraintTop_toBottomOf="@+id/nameValueNew" />
+
+    <EditText
+        android:id="@+id/phoneValueNew"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/phoneFieldNew"
+        app:layout_constraintTop_toBottomOf="@+id/idValueNew" />
+
+    <EditText
+        android:id="@+id/addressValueNew"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/addressFieldNew"
+        app:layout_constraintTop_toBottomOf="@+id/phoneValueNew" />
+
+    <CheckBox
+        android:id="@+id/studentDetailsCheckedNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:clickable="true"
+        android:text="checked"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressFieldNew" />
+
+    <Button
+        android:id="@+id/cancelButtonNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#595858"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveButtonNew"/>
+
+    <Button
+        android:id="@+id/saveButtonNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#595858"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancelButtonNew" />
+</androidx.constraintlayout.widget.ConstraintLayout>
